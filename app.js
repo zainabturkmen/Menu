@@ -75,6 +75,10 @@ const menu = [
 
 const sectionCenter = document.querySelector(".section-center");
 
-window.addEventListener("click", function(){
-  
+window.addEventListener("DOMContentLoaded", function(){
+  let displayMenu = menu.map(function(item){
+    return item;
+  })
+
+  console.log(displayMenu);
 })
