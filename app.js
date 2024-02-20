@@ -84,11 +84,13 @@ window.addEventListener("DOMContentLoaded", function(){
 // filter items
 
 filterBtns.forEach(function(btn){
-  btn.addEventListener(function(e){
-    
+  btn.addEventListener("click", function(e){
+    const category = e.currentTarget.dataset.id;
+    const menuCaregory = menu.filter(function(menuItems){
+      return menuItems;
+    })
   });
 });
-
 
 
 
