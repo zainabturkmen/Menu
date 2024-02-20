@@ -121,3 +121,4 @@ function displayMenuItems(menuItems){
   sectionCenter.innerHTML = displayMenu;
 }
 
+
