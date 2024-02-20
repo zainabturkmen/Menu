@@ -87,8 +87,18 @@ filterBtns.forEach(function(btn){
   btn.addEventListener("click", function(e){
     const category = e.currentTarget.dataset.id;
     const menuCaregory = menu.filter(function(menuItems){
-      return menuItems;
+      // 
+      if(menuItems.category === category){
+        return menuItems;
+      }
     })
+
+    if(category == "all"){
+      displayMenuItems(menu)
+    }
+    else{
+      displayMenuItems(menuCaregory);
+    }
   });
 });
 
