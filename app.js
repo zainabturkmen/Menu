@@ -120,3 +120,4 @@ function displayMenuItems(menuItems){
   displayMenu = displayMenu.join("");
   sectionCenter.innerHTML = displayMenu;
 }
+
